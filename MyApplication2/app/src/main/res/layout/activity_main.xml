@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cfe8a5"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="300dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="204dp"
+        android:background="#37e314"
+        android:cursorVisible="true"
+        android:text="Start Chalenge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="110dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="248dp"
+        android:layout_marginRight="248dp"
+        android:layout_marginBottom="340dp"
+        android:cursorVisible="false"
+        android:text="Difficulty"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="visible" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="151dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        android:layout_marginBottom="328dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="visible" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/nameTxt"
+        android:layout_width="329dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:hint="your name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
